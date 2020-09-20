@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Магазины</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Акции</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Доставка и оплата</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="images/logo.svg" alt="">
+                    </a>
+                    <div class="header__box">
+                        <div class="header__adress">Москва, ул. Науки 25</div>
+                        <ul class="user__list">
+                            <li class="user__item">
+                                <a class="user__link" href="#">
+                                    <img src="images/heard.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link" href="#">
+                                    <img src="images/man.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="user__item">
+                                <a class="user__link basket" href="#">
+                                    <!-- корзина товаров -->
+                                    <img src="images/prod-car.svg" alt="">
+                                    <p class="basket__num">1</p> <!-- для backend нужно так делать -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <ul class="menu-categories">
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Квадроциклы</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Катера</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Гидроциклы</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Лодки</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Вездеходы</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Снегоходы</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Двигатели</a>
+                    </li>
+                    <li class="menu-categories__item">
+                        <a href="#" class="menu-categories__link">Запчасти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner-section page-pd">
+        <div class="container">
+            <div class="banner-section__inner">
+                <div class="banner-slider">
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                    <a class="banner-slider__item" href="#">
+                        <img src="images/content/banner.jpg" alt="">
+                    </a>
+                </div>
+                <a class="banner-item sale-item" href="#">
+                    <!-- Скорее всего мы переходим кудато,поетому мы должны делать ссылку -->
+                    <div class="sale-item__top">
+                        <div class="sale-item__info">Акция</div>
+                        <div class="sale-item__price">
+                            <div class="price sale-item__new">190 000</div> <!-- price для знака валюты -->
+                            <div class="price sale-item__old">225 000</div> <!-- price для знака валюты -->
+                        </div>
+                    </div>
+                    <img class="sale-item__img" src="images/content/prod-1.png" alt="">
+                    <!-- папка контент для тех картинок которые будут изменятся через админку -->
+                    <h5 class="sale-item__title">Лодочный мотор Suzuki DF9.9BRS</h5>
+                    <div class="sale-item__footer">
+                        Акция действует до
+                        <span>31.08.2020</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="search page-pd">
+        <div class="container">
+            <div class="search__inner">
+                <div class="tabs">
+                    <button class="tabs-btn tabs-btn__active">Поиск по номеру</button>
+                    <button class="tabs-btn">Поиск по марке</button>
+                    <button class="tabs-btn">Поиск по названию товара</button>
+                </div>
+                <div class="tabs__content">
+                    <div class="tabs__content-inner tabs-active">
+                        <form class="tabs__content-form">
+                            <input class="tabs__content-input" type="text" placeholder="Введите номар">
+                            <button class="tabs__content-btn" type="submit">Искать</button>
+                        </form>
+                    </div>
+                    <div class="tabs__content-inner">
+                        <form class="tabs__content-form">
+                            <input class="tabs__content-input" type="text" placeholder="Введите марку">
+                            <button class="tabs__content-btn" type="submit">Искать</button>
+                        </form>
+                    </div>
+                    <div class="tabs__content-inner">
+                        <form class="tabs__content-form">
+                            <input class="tabs__content-input" type="text" placeholder="Введите название товара">
+                            <button class="tabs__content-btn" type="submit">Искать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="categories page-pd">
+        <div class="container">
+            <div class="categories-inner">
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Квадроциклы</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-1.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Гидроциклы</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-2.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Катера</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-3.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Снегоходы</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-4.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Вездеходы</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-5.png" alt="">
+                    </div>
+                </a>
+                <a href="#" class="categories__item">
+                    <div class="categories__item-info">
+                        <h4 class="categories__item-title">Двигатели</h4>
+                        <p class="categories__item-text">Подробнее</p>
+                    </div>
+                    <div class="categories__item-inner">
+                        <img src="images/content/cat-6.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <div class="container">
+            <h3 class="card-title">Популярные товары</h3>
+            <div class="card-wrapper">
+                <div class="tabs card__tabs">
+                    <a href="#" class="tabs-btn card-btn tabs-btn__active">запчасти</a>
+                    <a href="#" class="tabs-btn card-btn ">моторы</a>
+                    <a href="#" class="tabs-btn card-btn ">шины </a>
+                    <a href="#" class="tabs-btn card-btn ">электроника</a>
+                    <a href="#" class="tabs-btn card-btn ">инструменты</a>
+                    <a href="#" class="tabs-btn card-btn ">аксессуары </a>
+                </div>
+                <div class="tabs__content card-container">
+                    <div class="tabs__content-inner card-content tabs-active">
+                        <div class="card-slider">
+                            <div class="card-slider-inner">
+                                <div class="card-box__wrapper ">
+                                    <button class="card-content__favorite"></button>
+                                    <button class="card-content__basket"><img src="images/basket-white.svg" alt=""></button>
+                                    <a href="#" class="card-content__notifyLink">Сообщить о поступлении</a>
+    
+                                    <a href="#" class="card-item ">
+                                        <!-- sale для того чтобы появилась надпись sale-->
+                                        <p class="card-hover">посмотреть товар</p>
+                                        <img src="images/content/card-1.png" alt="" class="card-content__image">
+                                        <div class="caption">
+                                            <h4 class="card-content__title">Водонепроницаемый
+                                                Рюкзак</h4>
+                                            <p class="card-content__price">9 800 ₽</p>
+                                            <p class="card-content__notify">не в наличии</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-slider-inner">
+                                <div class="card-box__wrapper ">
+                                    <button class="card-content__favorite"></button>
+                                    <button class="card-content__basket"><img src="images/basket-white.svg" alt=""></button>
+                                    <a href="#" class="card-content__notifyLink">Сообщить о поступлении</a>
+
+                                    <a href="#" class="card-item ">
+                                        <!-- sale для того чтобы появилась надпись sale-->
+                                        <p class="card-hover">посмотреть товар</p>
+                                        <img src="images/content/card-2.png" alt="" class="card-content__image">
+                                        <div class="caption">
+                                            <h4 class="card-content__title">Водонепроницаемый
+                                                Рюкзак</h4>
+                                            <p class="card-content__price">9 800 ₽</p>
+                                            <p class="card-content__notify">не в наличии</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-slider-inner">
+                                <div class="card-box__wrapper ">
+                                    <button class="card-content__favorite"></button>
+                                    <button class="card-content__basket"><img src="images/basket-white.svg" alt=""></button>
+                                    <a href="#" class="card-content__notifyLink">Сообщить о поступлении</a>
+
+                                    <a href="#" class="card-item ">
+                                        <!-- sale для того чтобы появилась надпись sale-->
+                                        <p class="card-hover">посмотреть товар</p>
+                                        <img src="images/content/card-3.png" alt="" class="card-content__image">
+                                        <div class="caption">
+                                            <h4 class="card-content__title">Водонепроницаемый
+                                                Рюкзак</h4>
+                                            <p class="card-content__price">9 800 ₽</p>
+                                            <p class="card-content__notify">не в наличии</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-slider-inner">
+                                <div class="card-box__wrapper ">
+                                    <button class="card-content__favorite"></button>
+                                    <button class="card-content__basket"><img src="images/basket-white.svg" alt=""></button>
+                                    <a href="#" class="card-content__notifyLink">Сообщить о поступлении</a>
+
+                                    <a href="#" class="card-item sale">
+                                        <!-- sale для того чтобы появилась надпись sale-->
+                                        <p class="card-hover">посмотреть товар</p>
+                                        <img src="images/content/card-4.png" alt="" class="card-content__image">
+                                        <div class="caption">
+                                            <h4 class="card-content__title">Водонепроницаемый
+                                                Рюкзак</h4>
+                                            <p class="card-content__price">9 800 ₽</p>
+                                            <p class="card-content__notify">не в наличии</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-slider-inner">
+                                <div class="card-box__wrapper box-not-available">
+                                    <button class="card-content__favorite"></button>
+                                    <button class="card-content__basket"><img src="images/basket-white.svg" alt=""></button>
+                                    <a href="#" class="card-content__notifyLink">Сообщить о поступлении</a>
+
+                                    <a href="#" class="card-item sale">
+                                        <!-- sale для того чтобы появилась надпись sale-->
+                                        <p class="card-hover">посмотреть товар</p>
+                                        <img src="images/content/card-1.png" alt="" class="card-content__image">
+                                        <div class="caption">
+                                            <h4 class="card-content__title">Водонепроницаемый
+                                                Рюкзак</h4>
+                                            <p class="card-content__price">9 800 ₽</p>
+                                            <p class="card-content__notify">не в наличии</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-inner card__content-inner">
+                        <div class="card-slider">
+                            <div class="card-slider__item">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- <div class="tabs">
+    <a href="#" class="tabs-btn tabs-btn__active"></a>
+</div>
+<div class="tabs__content">
+    <div class="tabs__content-inner tabs-active"></div>
+    <div class="tabs__content-inner"></div>
+</div> -->
